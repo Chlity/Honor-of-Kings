@@ -1,0 +1,12 @@
+.mains {
+  /* 主页的背景图 */
+  background: url(../img/main_bg.jpg) no-repeat;
+  background-position: center top;
+}
+
+.buy_skin {
+  display: block;
+  width: 1400px;
+  height: 440px;
+  margin: 8px auto 12px;
+}

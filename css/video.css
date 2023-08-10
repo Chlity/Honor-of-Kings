@@ -1,0 +1,77 @@
+.video_lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video_list {
+  width: 212px;
+  margin: 0 0 30px 0;
+  cursor: pointer;
+}
+
+.video_list .album {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.video_list .album img{
+  width: 100%;
+  border-radius: 2px;
+}
+
+.video_list .album .album_count {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 12px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 2px;
+  
+}
+
+.video_list .album .album_count .count{
+  padding-left: 15px;
+  background: url(../img/index.webp) no-repeat;
+  background-position: -256px -62px;
+}
+
+.video_list .album .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.6);
+  transition: opacity 200ms ease-in-out;
+}
+
+.video_list:hover .album .cover{
+  opacity: 1;
+}
+
+.video_list .album .cover .icon_play {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background: url(../img/index.webp) no-repeat -192px -64px;
+}
+
+.video_list  .video_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,186 @@
+.main-center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 872px;
+  height: 1000px;
+}
+
+.left-content .racing-news {
+  display: flex;
+  margin: 19px 0 15px 0;
+}
+
+.left-content .racing-news .news-left {
+  width: 211px;
+  height: 260px;
+  background-color: orange;
+}
+
+.left-content .racing-news .news-right {
+  flex: 1;
+  overflow: hidden;
+  padding-left: 19px;
+}
+
+.left-content .racing-news .news-right .big-title {
+  display: block;
+  font-size: 24px;
+  padding-right: 70px;
+}
+
+.left-content .racing-news .news-right .big-title:hover {
+  text-decoration: underline;
+}
+
+.left-content .racing-news .news-right .small-title {
+  display: block;
+  color: #666;
+  padding-right: 190px;
+  margin-bottom: 15px;
+}
+
+.left-content .racing-news .news-right .news-item {
+  display: flex;
+  margin-bottom: 9px;
+}
+
+.left-content .racing-news .news-right .news-item .news-info{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.left-content .racing-news .news-right .news-item .news-icon {
+  display: block;
+  margin-right: 12px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  text-align: center;
+  color: #999999;
+  background: #e3e3e3;
+  border-radius: 10px;
+  border: 2px solid #e3e3e3;
+}
+
+.left-content .racing-news .news-right .news-item .news-info a {
+  display: block;
+  width: 470px;
+}
+
+.left-content .racing-news .news-right .news-item .news-info a:hover {
+  text-decoration: underline;
+}
+
+.left-content .racing-news .news-right .news-item .news-info .news-time {
+  color: #b8b9c5;
+  font-size: 12px;
+}
+
+.right-content .hero-skin {
+  width: 295px;
+  height: 528px;
+}
+
+.right-content .new-hero {
+  width: 294px;
+  height: 224px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.right-content .new-hero a {
+  display: block;
+  width: 294px;
+}
+
+.right-content .new-hero a img {
+  width: 294px;
+  border-radius: 0 0 2px 2px;
+}
+
+.right-content .new-hero .hero-intro {
+  padding: 10px 15px;
+  height: 47px;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+}
+
+.new-hero .hero-intro .text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.new-hero .hero-intro .time {
+  font-size: 12px;
+  color: #999;
+}
+
+.right-content .kpl-schedule {
+  margin-top: 21px;
+}
+
+.right-content .kpl-schedule .buy-tickets {
+  box-sizing: border-box;
+  width: 70px;
+  height: 22px;
+  margin-right: 20px;
+  text-align: center;
+  text-indent: 20px;
+  border: 1px solid #f3c258;
+  border-radius: 3px;
+  background: url(../img/index.webp) no-repeat -243px -85px;
+}
+
+.kpl-time {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.kpl-time thead {
+  height: 29px;
+  color: #999;
+  background-color: #f5f5f5;
+}
+
+.kpl-time tbody tr {
+  height: 60px;
+  font-size: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.kpl-time tbody tr td .kpl-icon img{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+
+.kpl-time tr td:nth-child(2),
+.kpl-time tr td:nth-child(4) {
+  width: 79px;
+}
+
+.kpl-time tbody tr td:nth-child(3) {
+  font-size: 14px;
+  width: 43px;
+  color: #f3c258;
+}
+
+.match-schedule {
+  
+  display: block;
+  margin-top: 20px;
+}
+
+.match-schedule img{
+  width: 293px;
+  height: 159px;
+  border-radius: 2px;
+}

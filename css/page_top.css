@@ -1,0 +1,128 @@
+.top {
+  height: 41px;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  
+}
+
+.top .top-box {
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  line-height: 41px;
+
+}
+
+.top .left-area {
+  display: flex;
+}
+
+.top .left-area .logo a{
+  position: relative;
+  z-index: 11;
+  display: block;
+  width: 150px;
+  text-indent: -9999px;
+  /* 隐藏文字 利于seo优化 */
+  background: url(../img/logo.png) top center no-repeat;
+  background-size: 112px auto;
+}
+
+.top .left-area .recommend{
+  position: relative;
+  display: block;
+  width: 230px;
+}
+
+.top .left-area .recommend:hover .recommend-pic{
+  display: block;
+}
+
+.top .left-area .recommend .recommend-pic {
+  position: absolute;
+  display: none;
+  left: -150px;
+  top: 0;
+  z-index: 3;
+}
+
+.top .right-area {
+  
+  display: flex;
+}
+
+.top .right-area .grow-pla .grow-text{
+  display: block;
+  position: relative;
+  font-size: 14px;
+  width: 118px;
+  color: #464646;
+  padding-left: 30px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.top .right-area .grow-pla .grow-text:hover {
+  color: #ff4e00;
+  
+}
+
+.top .right-area .grow-pla .grow-text::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../img/title_sprite.webp);
+  background-position: -30px 0; 
+  
+}
+
+.top .right-area .game-recommend {
+  position: relative;
+  width: 141px;
+}
+
+.top .right-area .game-recommend .dropdown {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  top: 41px;
+  right: 0;
+}
+
+.top .right-area .game-recommend .dropdown iframe {
+  width: 1020px;
+  height: 658px;
+} 
+
+.top .right-area .game-recommend .hot-text {
+  display: block;
+  font-size: 14px;
+  width: 118px;
+  color: #464646;
+  padding-right: 22px;
+ 
+}
+
+.top .right-area .game-recommend .hot-text:hover .dropdown{ 
+display: block;
+animation: opacityAnim 200ms ease-in;
+}
+
+.top .right-area .game-recommend .hot-text::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../img/title_sprite.webp);
+  background-position: 0 0;
+  transform: rotate(90deg);
+  opacity: 0.1;
+}

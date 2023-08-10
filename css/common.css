@@ -1,0 +1,232 @@
+/* 公共样式文件 */
+.top_width {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.header_width {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.main_top {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 单行超出显示省略号 */
+.nowrap {
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 菜单图标 */
+.menu_icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+  background: url(../img/index.webp);
+}
+
+/* 菜单图标的绿色图标 */
+.menu_icon_green {
+  background-position: -136px -5px;
+}
+
+/* 菜单图标的红色图标N */
+.menu_icon_N {
+  background-position: -137px -68px;
+}
+
+/* 菜单图标的红色图标H */
+.menu_icon_H {
+  background-position: -163px -68px;
+}
+
+/* 封装新闻类型图标 */
+
+.news_type::before {
+  display: inline-block; 
+  width: 32px;
+  height: 16px;
+  margin: 2px 5px 0 0;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+}
+
+.news_type_hot::before {
+  content: "热门";
+  color: #ff3636;
+  border: 1px solid #ff3636;
+  border-radius: 2px;
+}
+
+.news_type_new::before {
+  content: "新闻";
+  color: #1e96ab;
+  border: 1px solid #1e96ab;
+  border-radius: 2px;
+}
+
+.news_type_notice::before {
+  content: "公告";
+  color: #f4be19;
+  border: 1px solid #f4be19;
+  border-radius: 2px;
+}
+
+.news_type_activity::before {
+  content: "活动";
+  color: #ff3636;
+  border: 1px solid #ff3636;
+  border-radius: 2px;
+}
+
+.news_type_racing::before {
+  content: "赛事";
+  color: #4d9cff;
+  border: 1px solid #4d9cff;
+  border-radius: 2px;
+}
+
+/* 内容中心和赛事中心的公共属性 */
+.content_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.content_header .header_left .content_public {
+  font-size: 22px;
+  color: #323235;
+  padding-left: 32px;
+  background: url(../img/index.webp) no-repeat;
+  background-position: 0 -104px;
+}
+
+/* 更改赛事中心前面的图标 */
+.content_header .header_left .racing {
+  background-position: 0 -181px;
+}
+
+/* 更改英雄/皮肤前面的图标 */
+.content_header .header_left .skin-hero {
+  background-position: 0 -142px;
+}
+
+/* 更改KPL赛程前面的图标 */
+.content_header .header_left .KPL {
+  background-position: -157px -104px;
+}
+
+.content_header .header_right {
+  display: flex;
+}
+
+.content_header .header_right .content_more{
+  display: block;
+  padding-left: 20px;
+  color: #999;
+  background: url(../img/index.webp) no-repeat -252px 4px;;
+}
+
+.content_header .header_right .content_more:hover {
+  color: #f3c258;
+}
+
+/* 内容中心下的菜单栏 */
+.content_nav {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  line-height: 29px;
+  background-color: #F5F5F5;
+}
+
+.content_nav > .item {
+  flex: 1;
+  color: #999;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+      /* 不会平分一行的版本 auto是flex-basic的问题 */
+.content_nav > .item.item_v2 {
+  flex: 0 auto;
+  padding: 0 18px;
+}
+
+.content_nav > .item.active,
+.content_nav > .item:hover{
+  color: #333;
+  border-bottom-color: #f3c258;;
+}
+
+.content_nav > .line {
+  width: 1px;
+  height: 20px;
+  background: #e1e1e1;
+}
+
+/* 视频上面的列表 */
+.list_item {
+  display: flex;
+  padding: 18px 10px 9px 10px;
+  flex-wrap: wrap;
+
+}
+
+.list_item > .item {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 13px 0 13px;
+  margin: 0 8px 5px 0;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.list_item > .item.active,
+.list_item > .item:hover {
+  border-color: #f3c258;
+  background: #f3c258;
+  color: #fff;
+}
+
+/* 长方形的英雄列表 */
+.hero_pic_list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.hero_pic_list a {
+  position: relative;
+  display: block;
+}
+
+.hero_pic_list a .mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  color: #f3c258;
+  writing-mode: vertical-lr;
+  background-color: rgba(0,0,0,0.85);
+  transition: opacity 300ms ease-out;
+}
+
+.hero_pic_list a:hover .mask{
+  opacity: 1;
+}

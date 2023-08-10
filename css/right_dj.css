@@ -1,0 +1,88 @@
+.dj .right-nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+  width: 254px;
+  height: 494px;
+  background: url(../img/r_navBg.webp) no-repeat;
+}
+
+.dj .item {
+  position: relative;
+  left: 60px;
+  width: 117px;
+  height: 132px;
+  text-align: center;
+  background: url(../img/r_all2022.webp) no-repeat;
+}
+
+.dj .li-style {
+  width: 117px;
+  height: 38px;
+  margin-top: 1px;
+}
+
+.right-nav .top-dj {
+  width: 165px;
+  height: 145px;
+  background: url(../img/r_dj.webp) no-repeat center;
+}
+
+.right-nav .top-dj p {
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 12px;
+  width: 88px;
+  height: 20px;
+  font-size: 14px;
+  text-indent: 2px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #62401b;
+}
+
+
+
+.right-nav .r-con .qr-code {
+  background-position: -243px 0;
+}
+
+.right-nav .r-con .qr-code img {
+  width: 107px;
+  height: 107px;
+  margin-top: 5px;
+}
+
+.right-nav .r-con .wz-yd {
+  background-position: -243px -134px;
+}
+
+.right-nav .r-con .wz-yd:hover  {
+ background-position: -243px -172px;
+ }
+
+.right-nav .r-con .weibo {
+  background-position: -122px -120px;
+}
+
+.right-nav .r-con .weibo:hover {
+  background-position: -122px -240px;
+}
+
+.right-nav .r-con .gzh {
+  background-position: -122px -160px;
+}
+
+.right-nav .r-con .gzh:hover {
+  background-position: -122px -200px;
+}
+
+.right-nav .r-con .sph {
+  background-position: -122px 0;
+}
+
+.right-nav .r-con .sph:hover {
+  background-position: -122px -42px;
+}

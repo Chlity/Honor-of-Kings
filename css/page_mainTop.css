@@ -1,0 +1,146 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  height: 342px;
+  background: url(../img/rotate_bg.webp) no-repeat;
+}
+
+.rotation-chart {
+  display: flex;
+  flex-direction: column;
+  width: 604px;
+}
+
+.rotation-chart .rotation-text {
+  display: flex;
+  height: 100%;
+  color: #b1b2be;
+  text-align: center;
+  background-color: rgba(0,0,0,.8);
+
+}
+
+.rotation-chart .rotation-text .item {
+  font-size: 14px;
+  width: 120.8px;
+  line-height: 44px;
+}
+.rotation-chart .rotation-text .item.active,
+.rotation-chart .rotation-text .item:hover {
+  color: #f3c258;
+  background-color: rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+
+.main-news {
+  flex: 1;
+  padding: 0 17px;
+}
+
+.main-news .news-list{
+  display: flex;
+  width: 325px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  border-bottom: 1px solid #000;
+}
+
+.main-news .news-list .news-item {
+  width: 52px;
+  height: 48px;
+  line-height: 48px;
+  
+}
+
+.main-news .news-list .news-item a{
+  display: block;
+  box-sizing: border-box;
+  height: 48px;
+  line-height: 48px;
+  color: #b8b9c5;
+  transition: border-bottom 100ms ease-in;
+}
+
+.main-news .news-list .news-item.active a,
+.main-news .news-list .news-item:not(.more):hover a{
+  color: #f3c258;
+  border-bottom: 3px solid #f3c258;
+}
+
+.main-news .main-important {
+  width: 325px;
+  box-sizing: border-box;
+  margin-top: 18px;
+  margin-bottom: 11px;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 36px;
+  background-color: #414046;
+}
+
+.main-news .main-important .important-text {
+  display: block;
+  width: 230px;
+  color: #f3c258;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main-news .bottom-news {
+  width: 325px;
+  display: block;
+  
+}
+
+.main-news .bottom-news .bottom-list {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.main-news .bottom-news a .bottom-info {
+  flex: 1;
+  display: inline-block;
+  width: 268.6px;
+  color: #b8b9c5;
+  font-size: 14px;
+}
+
+.main-news .bottom-news .bottom-time {
+  padding: 0 0 0 22px;
+  color: #999999;
+  font-size: 12px;
+}
+
+.main-download {
+  display: flex;
+  flex-direction: column;
+  width: 236px;
+
+}
+
+.main-download .download {
+  display: block;
+  width: 236px;
+  height: 128px;
+  text-indent: -9999px;
+  background: url(../img/index.webp) no-repeat 0 -219px;
+}
+
+.main-download .envir {
+  display: block;
+  width: 236px;
+  height: 106px;
+  text-indent: -9999px;
+  background: url(../img/index.webp) no-repeat 0 -350px;
+}
+
+.main-download .exper {
+  display: block;
+  width: 236px;
+  height: 108px;
+  text-indent: -9999px;
+  background: url(../img/index.webp) no-repeat 0 -461px;
+}
